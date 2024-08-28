@@ -51,12 +51,10 @@ Environment="QGIS_SERVER_LOG_STDERR=1"
 Environment="QGIS_PLUGINPATH=/home/escueladelaire/qgis-plugins"
 Environment="QGIS_SERVER_LIZMAP_REVEAL_SETTINGS=True"
 Restart=on-failure
-User=www-data
-Group=www-data
 ;; or use a file:
 ;EnvironmentFile=/etc/qgis-server/env
 
-ExecStart=spawn-fcgi -s /var/run/qgisserver/qgisserver.socket -U www-data -G www-data -n /usr/lib/cgi-bin/qgis_mapserv.fcgi
+ExecStart=spawn-fcgi -s /var/run/qgisserver.socket -U www-data -G www-data -n /usr/lib/cgi-bin/qgis_mapserv.fcgi
 
 [Install]
 WantedBy=multi-user.target
