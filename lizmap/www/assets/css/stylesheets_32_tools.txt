@@ -1,0 +1,132 @@
+.icon {
+    background: url('icons.png') no-repeat top left;
+    width: 32px;
+    height: 32px;
+}
+.icon.12 {
+    background-position: 0 0;
+}
+.icon.11 {
+    background-position: -37px 0;
+}
+.icon.22 {
+    background-position: -74px 0;
+}
+.icon.21 {
+    background-position: -111px 0;
+}
+.icon.32 {
+    background-position: -148px 0;
+}
+.icon.31 {
+    background-position: -185px 0;
+}
+.icon.42 {
+    background-position: -222px 0;
+}
+.icon.41 {
+    background-position: -259px 0;
+}
+.icon.52 {
+    background-position: -296px 0;
+}
+.icon.51 {
+    background-position: -333px 0;
+}
+.icon.62 {
+    background-position: -370px 0;
+}
+.icon.61 {
+    background-position: -407px 0;
+}
+.icon.72 {
+    background-position: -444px 0;
+}
+.icon.71 {
+    background-position: -481px 0;
+}
+.icon.82 {
+    background-position: -518px 0;
+}
+.icon.81 {
+    background-position: -555px 0;
+}
+.icon.92 {
+    background-position: -592px 0;
+}
+.icon.91 {
+    background-position: -629px 0;
+}
+.icon.102 {
+    background-position: -666px 0;
+}
+.icon.101 {
+    background-position: -703px 0;
+}
+.icon.112 {
+    background-position: -740px 0;
+}
+.icon.111 {
+    background-position: -777px 0;
+}
+.icon.122 {
+    background-position: -814px 0;
+}
+.icon.121 {
+    background-position: -851px 0;
+}
+.icon.132 {
+    background-position: -888px 0;
+}
+.icon.131 {
+    background-position: -925px 0;
+}
+.icon.142 {
+    background-position: -962px 0;
+}
+.icon.141 {
+    background-position: -999px 0;
+}
+.icon.152 {
+    background-position: -1036px 0;
+}
+.icon.151 {
+    background-position: -1073px 0;
+}
+.icon.162 {
+    background-position: -1110px 0;
+}
+.icon.161 {
+    background-position: -1147px 0;
+}
+.icon.172 {
+    background-position: -1184px 0;
+}
+.icon.171 {
+    background-position: -1221px 0;
+}
+.icon.182 {
+    background-position: -1258px 0;
+}
+.icon.181 {
+    background-position: -1295px 0;
+}
+.icon.192 {
+    background-position: -1332px 0;
+}
+.icon.191 {
+    background-position: -1369px 0;
+}
+.icon.202 {
+    background-position: -1406px 0;
+}
+.icon.201 {
+    background-position: -1443px 0;
+}
+    
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon {
+        background: url('icons-retina.png') no-repeat top left;
+        background-size: 1480px 32px;
+    }
+}
