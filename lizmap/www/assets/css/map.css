@@ -105,7 +105,7 @@ button.btn-primary:hover > [class*=" icon-"] {
   top:1vw;
   /* height:calc(100% - 2vw); */
   height: fit-content;
-  border-radius: 10px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -135,13 +135,16 @@ button.btn-primary:hover > [class*=" icon-"] {
 }
 
 #mapmenu .nav-list > li > a {
-  width: 32px;
+  width: 42px;
   height: 32px;
   padding: 5px;
   margin-bottom: 5px;
 }
 #mapmenu .nav-list > li > a:hover, #mapmenu .nav-list > li.active > a {
   background-color:#FCFDFE;
+  background-attachment: fixed;
+  border-radius: 16px 0 0 16px;
+  transition: top .2s;
 }
 #mapmenu .nav-list > li > a .icon {
   display:inline-block;
@@ -151,10 +154,33 @@ button.btn-primary:hover > [class*=" icon-"] {
   width:32px;
   height:32px;
 }
+.icon-comment.icon-white, .icon-white.icon-star {
+  background-image: url("images/sprite_32_glyph.png") !important;
+  width: 32px;
+  height: 32px;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+}
 
 /*
 CSS Sprite positions calculated via http://instantsprite.com/ using 20px images and 5px offset or https://draeton.github.io/stitches/
 */
+.icon-comment.icon-white {
+  background-position: -37px 0px;
+}
+.nav .active > a .icon-comment.icon-white,
+.nav li > a:hover .icon-comment.icon-white,
+.nav li > a:focus .icon-comment.icon-white {
+  background-position: 0px 0px;
+}
+.icon-white.icon-star{
+  background-position: -111px 0px;
+}
+.nav .active > a .icon-white.icon-star,
+.nav li > a:hover .icon-white.icon-star,
+.nav li > a:focus .icon-white.icon-star {
+  background-position: -74px 0px;
+}
 #mapmenu .nav-list > li.home .icon {
   background-position: -37px 0px;
 }
