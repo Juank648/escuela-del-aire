@@ -27,6 +27,9 @@ body {
 
 #title {
   margin-top : 5px;
+  left: 120px !important;
+  width: 100%;
+  right: 360px;
 }
 p.error-msg{
   font-size: 1.5em;
@@ -61,6 +64,23 @@ button.btn-primary:hover > [class*=" icon-"] {
   border: 1px solid #F00;
 }
 
+#header{
+  background: transparent !important;
+}
+
+#headermenu{
+  position: fixed;
+  right: 0px;
+  left: auto;
+  top: 45px;
+  z-index: 1030;
+  margin-bottom: 0px;
+  overflow: visible;
+  font-size: inherit;
+  width: fit-content;
+  padding-left: 20px;
+  border-bottom-left-radius: 30px;
+}
 #headermenu.mobile{
   margin-left:-5px;
   margin-right:-5px;
@@ -98,6 +118,82 @@ button.btn-primary:hover > [class*=" icon-"] {
   display:none;
 }
 
+#over-header{
+  width: 116px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-top: 3px solid #FCFDFE;
+  border-right: 3px solid #FCFDFE;
+  border-bottom: 3px solid #FCFDFE;
+}
+
+#over-e-logo{
+  background: url(img/LogoCuchaviraRe.jpg) no-repeat left center;
+    background-size: auto;
+  width: 75px;
+  height: 80px;
+  left: 16px;
+  top: 5px;
+  position: absolute;
+  background-size: contain;
+}
+
+#Instagram-logo{
+  height: 24px;
+  width: 24px;
+  background: url(images/instagram.png) no-repeat left center;
+  background-size: contain;
+  position: absolute;
+  cursor: pointer;
+}
+#Facebook-logo{
+  height: 24px;
+  width: 24px;
+  background: url(images/facebook.png) no-repeat left center;
+  background-size: contain;
+  position: absolute;
+  left: calc(24px + 8.3px);
+  cursor: pointer;
+}
+#Youtube-logo{
+  height: 24px;
+  width: 24px;
+  background: url(images/youtube.png) no-repeat left center;
+  background-size: contain;
+  position: absolute;
+  left: calc(24px * 2 + 8.3px * 2);
+  cursor: pointer;
+}
+#Mail-logo{
+  height: 24px;
+  width: 24px;
+  background: url(images/mail.png) no-repeat left center;
+  background-size: contain;
+  position: absolute;
+  left: calc(24px * 3 + 8.3px * 3);
+  cursor: pointer;
+}
+
+#ICAM-logo{
+  height: 45px;
+  width: 225px;
+  position: fixed;
+  background: url(images/ICAM_Logo.png) no-repeat left center;
+  background-size: contain;
+  right: 0px;
+  top: 0px;
+  overflow: visible;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  #ICAM-logo {
+      display: none;
+  }
+}
 /* mapmenu */
 #mapmenu {
   position:absolute;
@@ -115,6 +211,12 @@ button.btn-primary:hover > [class*=" icon-"] {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%,-50%);
   border: 3px solid #FCFDFE;
+}
+/* Escalas altas (125%) */
+@media (min-resolution: 1.25dppx) {
+  #mapmenu {
+    transform: scale(0.8) translate(-50%, -50%);
+  }
 }
 
 #mapmenu .menu-title{
@@ -1625,7 +1727,7 @@ a.btn.btn-opacity-layer.active {
   z-index :1000;
   position :absolute;
   right :10px;
-  top : 10px;
+  top : 40px;
   font-size:0.9em;
 }
 #navbar div.slider{

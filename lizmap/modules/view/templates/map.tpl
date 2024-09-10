@@ -1,7 +1,11 @@
 <div id="header">
   <div id="logo">
   </div>
-  <div id="title">
+  <div id="headermenu" class="navbar navbar-fixed-top">
+    {zone 'view~map_headermenu', array('repository'=>$repository,'project'=>$project,'auth_url_return'=>$auth_url_return)}
+  </div>
+  <div id="sub-header">
+    <div id="title">
     <h1>
     {if $WMSServiceTitle}
       {$WMSServiceTitle}
@@ -9,10 +13,17 @@
       {@view~map.title.h1@}
     {/if}
     </h1>
-    <h2>{$repositoryLabel}</h2>
-  </div>
-  <div id="headermenu" class="navbar navbar-fixed-top">
-    {zone 'view~map_headermenu', array('repository'=>$repository,'project'=>$project,'auth_url_return'=>$auth_url_return)}
+    </div>
+    <div id="social-media">
+      <div id="Instagram-logo"
+      onclick="window.open('https://www.instagram.com/icamubate/', '_blank')"></div>
+      <div id="Facebook-logo"
+      onclick="window.open('https://www.facebook.com/p/Icam-Ubate-Oficial-100057642871301/', '_blank')"></div>
+      <div id="Youtube-logo"></div>
+      <div id="Mail-logo"></div>
+    </div>
+    <div id="ICAM-logo"
+    onclick="window.open('https://www.icam-ubate.com/', '_blank')"></div>
   </div>
   <div id="over-header">
     <div id="over-e-logo"></div>
