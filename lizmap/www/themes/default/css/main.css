@@ -16,12 +16,18 @@
 /* BODY */
 body {
   /*background-color : var(--color-background-primary);*/
-  background-image: url('img/fondoEDA.png');
+  background-image: url('img/bkgdPattern.png');
   background-size: auto;
-  background-position: top;
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  width: auto; 
+  background-position: top left;
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  /*width: auto; 
   height: 400px; /* Define una altura para el elemento */
+}
+/* Escalas altas (125%) */
+@media (min-resolution: 1.25dppx) {
+  body {
+    background-size: 100px;
+  }
 }
 
 /* BUTTONS */ 
