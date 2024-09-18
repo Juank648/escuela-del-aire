@@ -59,7 +59,7 @@
   overflow: visible;
   height: 25px;
   width: 121px;
-  background: #93C01F;
+  background: transparent;
 }
 
 @media (max-width: 767px) {
