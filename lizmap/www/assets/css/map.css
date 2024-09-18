@@ -80,10 +80,13 @@ button.btn-primary:hover > [class*=" icon-"] {
   width: fit-content;
   padding-left: 20px;
   border-bottom-left-radius: 30px;
+  border-left: 2px solid #FCFDFE;
+  border-bottom: 2px solid #FCFDFE;
 }
 #headermenu.mobile{
-  margin-left:-5px;
-  margin-right:-5px;
+  margin-left: -5px;
+  /*margin-right: -5px;*/
+  top: 45px;
 }
 #headermenu .navbar-search {
   margin-top:1px;
@@ -486,7 +489,7 @@ CSS Sprite positions calculated via http://instantsprite.com/ using 20px images 
 #content.mobile #dock{
   max-width:none;
   background-color:#4A4A4A;
-  z-index:1100;
+  z-index:9100;
   flex-grow: 1;
 }
 
@@ -624,7 +627,7 @@ SubDock
 #mini-dock {
   position:absolute;
   right:60px;
-  top:10px;
+  top:40px;
   max-width:30%;
   z-index:1010;
   background-color:#4A4A4A !important;
@@ -1727,7 +1730,7 @@ a.btn.btn-opacity-layer.active {
   z-index :1000;
   position :absolute;
   right :10px;
-  top : 40px;
+  top : 50px;
   font-size:0.9em;
 }
 #navbar div.slider{
